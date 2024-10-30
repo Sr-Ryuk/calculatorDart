@@ -1,16 +1,19 @@
 # calculator
 
-A new Flutter project.
+Projeto de calculadora construida a partir dos tópicos de dart e flutter estudados.
 
-## Getting Started
+## Estruturação
 
-This project is a starting point for a Flutter application.
+- Soma, subtração, fatorial, divisão, multiplicação, potencialização e calculos sequenciais.
+- Estrutura responsiva sendo separada por componentes e modulo de memoria separada para as funções de lógica.
+- Componentes separados por botões, visor, rows e importados nos modulos de visor e teclado.
 
-A few resources to get you started if this is your first Flutter project:
+Para acesso no Github segue link com as ultimas correções realizadas.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Inicializando o projeto
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Utilizando o comando flutter run o projeto pode ser inicializado no navegador de escolha.
+
+# Github
+
+[Diretorio no github](https://github.com/Sr-Ryuk/calculatorDart.git)
