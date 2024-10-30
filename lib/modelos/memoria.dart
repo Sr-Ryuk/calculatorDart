@@ -32,9 +32,10 @@ class Memoria {
       _buffer[1] = ehSinalDeIgual ? '' : novaOperacao;
       _buffer[2] = 0.0;
 
-      _valor = (_buffer[0] as double)
-          .toStringAsFixed(2); // Garantindo que _buffer[0] é double
-      _valor = _valor.endsWith('.00') ? _valor.split('.')[0] : _valor;
+      // Arredondando para 1 casa decimal
+      _valor = (_buffer[0] as double).toStringAsFixed(1);
+      _valor = _valor.endsWith('.0') ? _valor.split('.')[0] : _valor;
+
       _ehPrimeiroNumero = ehSinalDeIgual;
       _limparVisor = !ehSinalDeIgual;
     }
@@ -79,7 +80,9 @@ class Memoria {
       default:
         resultado = primeiroNumero;
     }
-    return resultado;
+
+    // Arredondar o resultado para 1 casa decimal
+    return double.parse(resultado.toStringAsFixed(1));
   }
 
   _adicionarDigito(String digito) {
